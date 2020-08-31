@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+     <meta name="viewport" content="width=device-width">
+     <meta name="viewport" content="initial-scale=1.0">
+     <meta name="mobile-web-app-capable" content="yes">
+     <meta name="apple-mobile-web-app-capable" content="yes" />
+     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+<style>
+body {
+	margin:20px;
+	padding:0px;
+	background-color: white;
+	color: black;
+}
+body, div, td, p, button {
+	font: 20px/1.4em Verdana, Geneva, Helvetica, sans-serif;
+}
+input,textarea {
+	font: 30px/1.4em Verdana, Geneva, Helvetica, sans-serif;
+}
+</style>
+<title>Gästeregistrierung</title>
+</head>
+<body>
+<p>Erhebung von Kontaktdaten von G&auml;sten in der Gastronomie zur Bek&auml;mpfung der Corona-Pandemie gem&auml;&szlig; &bdquo;Hygienekonzept Gastronomie der Bayerischen Staatsministerien f&uuml;r Gesundheit und Pflege und f&uuml;r Wirtschaft, Landesentwicklung und Energie&ldquo; in Verbindung mit &sect; 13 Abs. 4 Satz 3 der Vierten Bayerischen Infektionsschutzma&szlig;nahmenverordnung:</p>
+<form action="/submit.php" method="post">
+<p>
+    <input type="text" placeholder="Vorname" name="fname" size="20" required>
+<p>
+    <input type="text" placeholder="Nachname" name="lname" size="20" required>
+<p>
+    <textarea placeholder="Anschrift (alternativ Telefonnummer oder E-Mail-Adresse)" rows="5"
+    cols="20" name="contact" required></textarea>
+<p>
+    <input type="submit" name="submit" value="Absenden">
+</form>
+<p><strong>Informationen nach Art. 13 DSGVO &uuml;ber die Verarbeitung Ihrer personenbezogenen Daten finden Sie <a href="/dsgvo">hier</a></strong></p>
+</body>
